@@ -1,6 +1,6 @@
 {
   "name": "Swans-2",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "A modification of https://github.com/karlosvalverde/swans, using Tailwind CSS, as the PEC3 for the HTML & CSS Tools course, at the UOC",
   "scripts": {
@@ -43,6 +43,7 @@
     "stylelint": "^13.3.1",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-scss": "^3.16.1",
+    "tailwindcss": "^1.4.6",
     "typescript": "^3.8.3",
     "v-lazy-image": "^1.4.0",
     "vue-lazy-youtube-video": "^2.0.0",

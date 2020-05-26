@@ -2,6 +2,9 @@
  * Import variables
  */
 
+@tailwind base;
+@tailwind components; 
+
 @import "variables";
 
 /**
@@ -9,6 +12,8 @@
  * see: https://en.parceljs.org/module_resolution.html
  * see commented examples below
  */
+
+
 
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "@fortawesome/fontawesome-free/css/all.css";
@@ -26,3 +31,5 @@
 @import "layouts/what";
 @import "layouts/who";
 @import "layouts/where";
+
+@tailwind utilities;
