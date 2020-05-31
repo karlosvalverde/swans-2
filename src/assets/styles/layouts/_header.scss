@@ -4,6 +4,7 @@
   & > div {
     @apply flex-1;
   }
+
   h2 {
     font-size: 3vw;
   }
@@ -16,6 +17,7 @@
 
 @media (max-width: 450px) {
   @apply flex-wrap;
+  
   .header {
     h2 {
       font-size: 5vw;

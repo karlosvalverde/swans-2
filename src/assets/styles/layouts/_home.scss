@@ -24,12 +24,12 @@
 @media (max-width: 850px) {
   .home {
     @apply px-5;
+
     .is-big {
       font-size: 15vw;
       margin-left: -2vw;
       margin-top: 8vh !important;
       max-height: calc(100vh - 6rem);
-      
     }
   }
 }
