@@ -8,7 +8,6 @@ import router from "./routes";
 import App from "./App.vue";
 
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
-import "bootstrap";
 import "../styles/main.scss";
 
 /**
