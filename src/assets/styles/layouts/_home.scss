@@ -1,12 +1,20 @@
 .home {
+  @apply pl-5 pr-10 text-white;
+
+  & > div {
+    @apply flex;
+  }
+
   h1 {
     margin-left: -.5vw;
   }
 }
 
 .is-big {
+  @apply uppercase fixed z-10 overflow-auto;
   font-size: 20vw;
-  max-height: 90vh;
+  margin-top: 9vh !important;
+  max-height: calc(100vh - 8rem);
 }
 
 .is-secondary {
@@ -15,10 +23,13 @@
 
 @media (max-width: 850px) {
   .home {
+    @apply px-5;
     .is-big {
       font-size: 15vw;
       margin-left: -2vw;
       margin-top: 8vh !important;
+      max-height: calc(100vh - 6rem);
+      
     }
   }
 }
@@ -26,7 +37,7 @@
 @media (max-width: 450px) {
   .home {
     .is-big {
-      margin-top: 17vh !important;
+      max-height: calc(100vh - 8rem);
     }
   }
 }

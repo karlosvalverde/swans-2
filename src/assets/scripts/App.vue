@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="container">
+    <div class="h-screen">
       <my-header></my-header>
       <transition name="fade" mode="out-in">
         <router-view></router-view>

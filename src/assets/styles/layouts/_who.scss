@@ -1,6 +1,11 @@
 .who {
+  @apply flex flex-wrap justify-center items-end text-center;
   margin-top: 12vh !important;
   margin-bottom: 12vh !important;
+
+  & > div {
+    @apply w-1/4;
+  }
 
   .is-card {
     margin: 1vw;
@@ -14,9 +19,9 @@
     &:hover {
       background-color: $primary;
 
-      .img-fluid {
+      .img {
         filter: grayscale(100%);
-      }
+      }  
 
       h2 {
         color: $secondary;
@@ -30,7 +35,7 @@
   color: $secondary;
   transition: 1s opacity linear;
   
-  .img-fluid {
+  .img {
     filter: grayscale(100%);
   }
 
@@ -66,7 +71,7 @@
     font-size: 5vw;
   }
   
-  .w-25 {
+  .is-card {
     width: 100% !important;
   }
 }

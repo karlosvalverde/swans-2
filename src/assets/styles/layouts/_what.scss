@@ -1,7 +1,31 @@
 .what {
+  @apply flex px-5;
+
+  & > div {
+    @apply w-1/2;
+  }
+
   .is-scrolled {
-    margin-top: 1vw;
+    margin-top: 10vh;
     max-height: 100vh !important;
+
+    li > h2 {
+      @apply pb-10 uppercase;
+    }
+
+    li:nth-of-type(1n+2) {
+      h2 {
+        @apply pt-16;
+      }
+    }
+    
+    li > p {
+      @apply pb-10;
+
+      &:nth-last-of-type(1) {
+        @apply pb-20;
+      }
+    }
   }
 
   .letter-spacing-small {
@@ -18,18 +42,13 @@
 }
 
 @media (max-width: 1250px) {
-  .display-4 {
-    font-size: 4vw;
-  }
 }
 
 @media (max-width: 850px) {
   .what {
-    margin-top: 12vw !important;
-
     .is-scrolled {
       margin-top: 0;
-      height: calc(95vh - 10vh);
+      max-height: calc(100vh - 6rem);
 
       .serif {
         font-size: 3vw;
@@ -44,32 +63,25 @@
 
 @media (max-width: 450px) {
   .what {
-    margin-top: 30vw !important;
+    & > div {
+      @apply w-full flex-wrap;
+    }
+
+    margin-top: 5vh !important;
     display: block !important;
     flex-wrap: wrap !important;
 
     .is-scrolled {
       margin-top: 7vw;
+      max-height: calc(100vh - 8rem);
 
       .serif {
         font-size: 5.5vw;
         text-align: center;
         
-        &.m-5 {
+        &.m-10 {
           margin: .5rem !important;
         }
-      }
-    }
-
-    .is-fixed {
-      position: relative;
-    }
-    
-    .col-6 {
-      max-width: 100% !important;
-
-      .m-5 {
-        margin-top: 2.5vh !important;
       }
     }
   }

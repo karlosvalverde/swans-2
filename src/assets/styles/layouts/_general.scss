@@ -4,10 +4,8 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  @apply bg-green-500;
   font-family: $font-family-sans-serif;
-  background-color: $bg;
   color: $primary;
 }
 
@@ -17,7 +15,11 @@ h2 {
 }
 
 a {
-  color: $primary;
+  &:hover {
+    transition: .15s;
+    filter: contrast(150%) drop-shadow(2px 2px 8px $primary);
+    text-decoration: none;
+  }
 }
 
 .full {
@@ -48,7 +50,7 @@ a {
 }
 
 .is-above-2 {
-  z-index: 999;
+  @apply z-10;
 }
 
 .is-fixed {
@@ -56,6 +58,7 @@ a {
 }
 
 .is-scrolled {
+  @apply overflow-y-auto;
   height: calc(90vh - 10vh);
 }
 

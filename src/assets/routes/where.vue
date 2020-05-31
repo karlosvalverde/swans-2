@@ -1,7 +1,7 @@
 <template>
-  <div class="where container-fluid">
-    <div class="row w-100">
-      <div class="col-6 pr-5 is-fixed is-above-1 secondary my-auto">
+  <div class="where">
+    <div class="flex mt-24">
+      <div class="object-contain pr-5">
         <b-carousel
           class="w-100"
           id="carousel-fade"
@@ -10,23 +10,17 @@
           <b-carousel-slide
             img-src="https://www.revolvermag.com/sites/default/files/styles/banner/public/media/images/article/swanscatherine-ceresole.jpg"
           ></b-carousel-slide>
-          <b-carousel-slide
-            img-src="https://www.sala-apolo.com/uploads/media/default/0001/02/thumb_1493_default_wide.jpeg"
-          ></b-carousel-slide>
-          <b-carousel-slide
-            img-src="https://i.pinimg.com/originals/b5/fd/8c/b5fd8cb3444a05a71f9a065a8fd510e9.jpg"
-          ></b-carousel-slide>
         </b-carousel>
         <div>
-          <h3 class="mt-3 font-weight-bold">Bar Celona</h3>
+          <h3 class="mt-5 font-bold">Bar Celona</h3>
           <p>C/ d'en Pepí 64 - 08004<br>
           Barcelona</p>
         </div>  
       </div>
       <div class="break"></div>
-      <div class="col-6 ml-auto pb-5 mb-5 is-scrolled overflow-auto w-100 text-center">    
+      <div class="w-full overflow-auto">    
         <div class="grid">
-          <div class="item-1 m-5m-5">
+          <div class="item-1 m-5">
             <h2>AND</h2>
           </div>
           <div class="item">
