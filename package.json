@@ -1,6 +1,6 @@
 {
   "name": "Swans-2",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "description": "A modification of https://github.com/karlosvalverde/swans, using Tailwind CSS, as the PEC3 for the HTML & CSS Tools course, at the UOC",
   "scripts": {
